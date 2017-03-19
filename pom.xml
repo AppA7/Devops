@@ -54,7 +54,7 @@
                 <artifactId>docker-maven-plugin</artifactId>
                 <version>0.4.11</version>
                 <configuration>
-					<imageName>${env.HOSTNAME}:5000/${project.artifactId}</imageName>
+					<imageName>192.168.33.55:5000/${project.artifactId}</imageName>
                     <dockerDirectory>src/main/docker</dockerDirectory>
                     <resources>
                         <resource>
