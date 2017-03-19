@@ -54,7 +54,7 @@
                 <artifactId>docker-maven-plugin</artifactId>
                 <version>0.4.11</version>
                 <configuration>
-                    <imageName>localhost:5000/${project.artifactId}</imageName>
+					<imageName>{env.HOSTNAME}:5000/${project.artifactId}</imageName>
                     <dockerDirectory>src/main/docker</dockerDirectory>
                     <resources>
                         <resource>
